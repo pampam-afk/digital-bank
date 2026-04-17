@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    padding: 40px;
+    margin-left: 90px;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    display: inline;
+    list-style: none;
+    padding: 15px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar ul li a:hover{
+    text-transform: uppercase;
+    color: chartreuse;
+}
+
+.divbar1 button{
+    background-color: rgb(160, 246, 160);
+    border-color: rgb(160, 246, 160);
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.divbar1 button a{
+    text-decoration: none;
+    padding: 12px;
+    color: white;
+}
+
+.hero-section{
+    display: flex;
+    padding: 40px;
+    margin-left: 90px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.divbar2{
+    margin-top: 120px;
+}
+
+.divbar2 h1{
+    width: 45%;
+}
+
+.divbar2 p{
+    color: gray;
+    line-height: 1.5;
+    width: 55%;
+    margin-top: 40px;
+}
+
+.divbar2 button{
+    background-color: rgb(160, 246, 160);
+    border-color: rgb(160, 246, 160);
+    border-radius: 20px;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.divbar2 button a{
+    text-decoration: none;
+    padding: 12px;
+    color: white;
+}
+
+.divbar3 img{
+    width: 600px;
+    height: 600px;
+    margin-bottom: -80px;
+}
+
+.section{
+    background-color: rgb(229, 229, 229);
+    padding-top: 80px;
+    border-top: 0;
+    padding-bottom: 40px;
+    padding-right: 50px;
+}
+
+.divbar4 h2{
+    margin-left: 90px;
+}
+
+.divbar4 p{
+    width: 45%;
+    color: gray;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+main{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 90px;
+    gap: 30px;
+}
+
+main div h3{
+    margin-top: 10px;
+}
+
+main div p{
+    margin-top: 30px;
+    color: gray;
+}
+
+.section1{
+    margin-left: 90px;
+    margin-right: 80px;
+}
+
+.divbar5 h2{
+    margin-top: 90px;
+}
+
+.main1{
+    display: flex;
+    margin-left: 6px;
+    
+}
+
+.main1 div img{
+    width: 220px;
+    height: 30vh;
+    border-radius: 6px;
+}
+
+.footbar{
+    background-color: rgb(68, 38, 97);
+    margin-top: 50px;
+}
+
+.div-link{
+    display: flex;
+    padding: 30px;
+    margin-left: 90px;
+    justify-content: space-between;
+}
+
+.divbar6{
+    padding: 22px;
+}
+
+.divbar6 a img{
+    padding: 4px;
+}
+
+.divbar7{
+    display: flex;
+}
+
+.divbar7 ul li{
+    padding: 10px;
+    margin-left: 60px;
+    list-style: none;
+}
+
+.divbar7 ul li a{
+    text-decoration: none;
+    color: rgb(211, 203, 203);
+}
+
+.divbar8{
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.divbar8 button{
+    background-color: rgb(160, 246, 160);
+    border-color: rgb(160, 246, 160);
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.divbar8 button a{
+    text-decoration: none;
+    padding: 12px;
+    color: white;
+}
+
+.divbar8 p{
+    padding: 22px;
+    margin-left: -45px;
+    color: grey;
+}
+
+/* media query */
+@media ( max-width: 768px){
+    .navbar{
+        margin-left: 0;
+    }
+
+    .navbar ul li, .divbar1{
+        display: none;
+    }
+
+    .hero-section{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    .divbar2 h1{
+        width: 80%;
+        margin-left: 30px;
+        padding: 0px;
+    }
+
+    .divbar2 p{
+        width: 100%;
+    }
+
+    .divbar3 img{
+        height: 40vh;
+        width: 300px;
+    }
+
+    .divbar4{
+        text-align: center;
+    }
+
+    .divbar4 h2{
+        width: 60%;
+        margin-left: 80px;
+    }
+
+    .divbar4 p{
+        width: 75%;
+        margin-left: 60px;
+    }
+
+    main{
+        display: block;
+        margin-left: 0;
+    }
+
+    main img{
+        margin-left: 150px;
+        margin-top: 25px;
+    }
+
+    main h3{
+        margin-left: 120px;
+    }
+
+    main p{
+        margin-left: 30px;
+    }
+
+    .divbar5 h2{
+        margin-left: 40px;
+    }
+
+    .main1{
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .main1 div img{
+        margin-left: -30px;
+        width: 300px;
+    }
+
+    .main1 div h3{
+        margin-left: 0;
+    }
+
+    .main1 div p{
+        margin-left: 0;
+    }
+
+    .footbar{
+        flex-direction: column;
+    }
+
+    .div-link{
+        flex-direction: column;
+    }
+
+    .divbar6{
+        margin-left: -20px;
+    }
+
+    .divbar7{
+        flex-direction: column;
+        margin-left: -40px;
+    }
+
+    .divbar8{
+        margin-left: -30px;
+    }
+
+    .divbar8 button{
+        margin-left: 25px;
+    }
+
+}
