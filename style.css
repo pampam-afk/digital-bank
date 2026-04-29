@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NO:wght@100..400&family=Rubik+Storm&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +11,14 @@
 
 .navbar{
     display: flex;
-    padding: 40px;
-    margin-left: 90px;
+    padding: 30px;
+    /* margin-left: 90px; */
     justify-content: space-between;
+    position: fixed;
+    background-color: burlywood;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar ul li{
@@ -47,6 +57,7 @@
     padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: 0;
+    margin-top: 90px;
 }
 
 .divbar2{
@@ -54,7 +65,9 @@
 }
 
 .divbar2 h1{
-    width: 45%;
+    width: 60%;
+    font-family: "Playwrite NO", cursive;
+    font-weight: bold;
 }
 
 .divbar2 p{
@@ -199,6 +212,18 @@ main div p{
     color: grey;
 }
 
+.socials{
+    top: 50%;
+    position: fixed;
+    width: 2rem;
+    background-color: tomato;
+    height: 25vh;
+}
+
+.socials .fa-heart,.fa-home,.fa-envelope,.fa-book{
+    padding: 8px;
+}
+
 /* media query */
 @media ( max-width: 768px){
     .navbar{
@@ -264,8 +289,16 @@ main div p{
         margin-left: 30px;
     }
 
+    .section1{
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
     .divbar5 h2{
-        margin-left: 40px;
+        margin-left: 0px;
     }
 
     .main1{
@@ -274,7 +307,7 @@ main div p{
     }
 
     .main1 div img{
-        margin-left: -30px;
+        margin-left: 0px;
         width: 300px;
     }
 
@@ -292,23 +325,30 @@ main div p{
 
     .div-link{
         flex-direction: column;
+        margin-left: 35px;
     }
 
     .divbar6{
-        margin-left: -20px;
+        /* margin-left: */
     }
 
     .divbar7{
         flex-direction: column;
-        margin-left: -40px;
+        /* margin-left: 0px; */
+        /* padding: 0; */
     }
 
     .divbar8{
-        margin-left: -30px;
+        /* margin-left: 0px; */
+        /* padding: 0; */
     }
 
     .divbar8 button{
-        margin-left: 25px;
+        margin-left: -180px;
+    }
+
+    .divbar8 p{
+        margin-left: -200px;
     }
 
 }

@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Bank</title>
     <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://fontawesome.com/icons"> -->
+
 </head>
 <body>
     
@@ -14,9 +18,9 @@
 
         <ul>
             <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="">Blog</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="">Careers</a></li>
         </ul>
 
@@ -27,19 +31,19 @@
 
     <header class="hero-section">
 
-        <div class="divbar2">
+        <div class="divbar2" data-aos="fade-right" data-aos-offset="300" data-aos-duration="3000">
             <h1>Next generation digital banking</h1>
             <p>Take your financial life online. Your Digitalbank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
 
-            <button><a href="">Request Invite</a></button>
+            <button  data-aos="fade-up"><a href="">Request Invite</a></button>
         </div>
 
-        <div class="divbar3">
+        <div class="divbar3"  data-aos="fade-left">
             <img src="images/image-mockups.png" alt="">
         </div>
     </header>
 
-    <section class="section">
+    <section class="section" id="about">
         
         <div class="divbar4">
             <h2>Why choose Digitalbank?</h2>
@@ -77,7 +81,7 @@
         </main>
     </section>
 
-    <section class="section1">
+    <section class="section1" id="blog">
         <div class="divbar5">
             <h2>Latest Articles</h2>
         </div>
@@ -153,5 +157,17 @@
             </div>
         </div>
 </footer>
+
+<div class="socials">
+    <i class="fa fa-heart"></i>
+    <i class="fa fa-home"></i>
+    <i class="fa fa-envelope"></i>
+    <i class="fa fa-book"></i>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
